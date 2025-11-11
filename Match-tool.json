@@ -1,0 +1,306 @@
+{
+  "info": {
+    "name": "Match",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Cache",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/utils/cache",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "utils",
+            "cache"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n  \"action\": \"fetch-all-keys\" \n}\n//clear-job-posts\n//clear-resumes\n//clear-all-cache\n//fetch-res-cache\n//fetch-job-post-cache\n//fetch-all-keys",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Excel",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/utils/create/excel",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "utils",
+            "create",
+            "excel"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n  \"isResume\": true,\n\"text\": \"Christine Vollkommer, Banker, Merrick, NY Authorized to work in the US for any employer Profile I am a team player with over 20 years of experience building relationships with clients and co-workers. Outgoing and detail-oriented, I enjoy helping clients with their banking needs and have partnered with great teams across every branch I have worked in. Work Experience Private Client Banker Chase Bank – Massapequa, NY January 1991 – December 2023 - Identified applicable bank services to high net worth clients to maximize relationships, including investments. - Served as small business specialist and manager on duty (2022-2023). Relationship Banker Chase – Seaford, NY January 2013 – December 2022 - Developed banking relationship plans with clients across their lifespan. - Responded to customer needs and deadlines. - Served as small business specialist and manager on duty. Branch Manager Chase – Merrick, NY January 2007 – December 2013 - Directed all operational aspects including sales, service, and growth. - Managed, trained, and motivated staff members. - Developed objectives and business plans. Assistant Branch Manager Chase – Seaford, NY January 2000 – December 2007 - Liaison between branch manager and teller staff. - Managed staff scheduling and new-hire training. - Ensured compliance with procedures and regulations. Customer Service Chase – North Bellmore, NY January 1999 – December 2000 - Provided courteous client information on account status and balances. - Referred clients to appropriate salespeople within branch. Customer Service/Sales Chase – Hempstead, NY January 1997 – December 1999 - Assisted clients with banking and sales referrals. - Began sales training. Teller/Head Teller Various Locations – NY January 1991 – December 1997 - Processed daily banking transactions. - Balanced cash drawer efficiently. Education High School Diploma West Hempstead High School – West Hempstead, NY September 1983 – June 1987 Skills - Client transaction processing and cash drawer balancing - Customer service and sales referral - Staff management and training - Banking regulations and compliance (Bank Secrecy Act) Certifications and Licenses - NMLS - Series 6 - Series 63\"\n}\n\n\n\n\n\n\n\n\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "HF - Gemma Google Embeddings",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "key": "token",
+            "value": "YOUR-TOKEN-HERE",
+            "type": "string"
+          }
+        },
+        "description": "",
+        "url": {
+          "raw": "https://ze94c5giiqaz8g1n.eastus.azure.endpoints.huggingface.cloud/embed",
+          "protocol": "https",
+          "host": [
+            "ze94c5giiqaz8g1n",
+            "eastus",
+            "azure",
+            "endpoints",
+            "huggingface",
+            "cloud"
+          ],
+          "path": [
+            "embed"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"dimensions\": 768,\n  \"inputs\": \"this a test sentence\",\n  \"normalize\": true,\n  \"truncate\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "HF - Nomic Embeddings",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "key": "token",
+            "value": "YOUR-TOKEN-HERE",
+            "type": "string"
+          }
+        },
+        "description": "",
+        "url": {
+          "raw": "https://a37cx3msr6hk7lvx.us-east-1.aws.endpoints.huggingface.cloud/embed",
+          "protocol": "https",
+          "host": [
+            "a37cx3msr6hk7lvx",
+            "us-east-1",
+            "aws",
+            "endpoints",
+            "huggingface",
+            "cloud"
+          ],
+          "path": [
+            "embed"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"dimensions\": 768,\n  \"inputs\": \"this a test sentence\",\n  \"normalize\": true,\n  \"truncate\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Match",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/match",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "match"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n  \"action\": \"job-to-res\", // res-to-job, job-to-res\n  \"jobPostKeys\":[\"Full Stack Web Developer\"],\n  \"resumeKeys\":[\"Senior Software Developer\",\n      \"Web Developer\",\n      \"WordPress Web Developer\"]\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Process job post",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/process/jobPost",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "process",
+            "jobPost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{  \n  \"jobPost\": \"We are hiring a results-driven Full-Stack Web Developer with a strong foundation in scalable architecture, cloud infrastructure, and end-to-end application development. Ideal candidates will mirror the analytical strengths of an adaptable developer with a track record of transforming static websites into SEO-optimized SSR platforms, leading AWS-based network overhauls improving security by 80%, and increasing client satisfaction by 30% through tailored product management systems. The role demands expertise in JavaScript (React.js, Vue.js, Node.js), RESTful APIs, AWS services (EC2, S3, Lambda, RDS), and database systems (MySQL, MongoDB, SQLite). Candidates should demonstrate self-driven learning, technical ownership, and the ability to ship complex projects under tight deadlines while collaborating cross-functionally.\"\n\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Process resume",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/process/resume",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "process",
+            "resume"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n  \"resume\": \"Steven Park, web developer, Cleveland, TN — Marketing and Web Design Professional with 12+ years of experience supporting marketing teams through web development, graphic design, and multimedia production. Proven ability to troubleshoot technical issues, deliver creative marketing materials, and manage large-scale web projects. Work Experience: Web Developer at Lee University (2021–Present): Maintains and optimizes university websites, improves SEO, and performs analytics-driven improvements. Prepress Technician at Upland Labels (2018–2021): Web content recreation, digital proofing tools, and customer catalog prototypes. Programmer Analyst at Loma Linda University Health (2013–2018): Maintained CE websites, managed A/V, created marketing assets. Graphic Designer at Axex Dental (2012–2013): Developed responsive dental practice software, graphic identity, and CSS frameworks. Multimedia Specialist at LLU Health (2009–2012): Website management, CE catalog design, multimedia marketing support. Education: Bachelor’s in Visual Communications, Westwood College (2006); Associate’s in Graphic Design. Skills: HTML5, CSS, JavaScript, Adobe Creative Suite (Photoshop, InDesign), WordPress, SEO, Email Marketing, Digital/Print Design, Mac/Windows OS, Prepress, Flexographic and Digital Press, Desktop Publishing.\"\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "System evaluation",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://localhost:3303/document/utils/system/evaluate",
+          "protocol": "http",
+          "host": [
+            "localhost:3303"
+          ],
+          "path": [
+            "document",
+            "utils",
+            "system",
+            "evaluate"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{ \n  \"isResume\": true\n}\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "variable": []
+}
